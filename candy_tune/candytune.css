@@ -21,184 +21,204 @@ p{
     padding-left: 20px;
 }
 
-.kotomi{
-    color: #ff0000;
-    font-weight: bold;
+:root{
+    --rino-color: #00cfd6;
+    --nachiko-color: #00d170;
+    --bibi-color: #ff00bf;
+    --nattan-color: #ff8800;
+    --kotomi-color: #ff0000;
+    --shichan-color: #c32bff;
+    --kiri-color: #0026ff;
 }
 
-.nattan{
-    color: #ff8800;
+.rino{
+    color: var(--rino-color);
     font-weight: bold;
 }
 
 .nachiko{
-    color: #00d170;
-    font-weight: bold;
-}
-
-.rino{
-    color: #00cfd6;
-    font-weight: bold;
-}
-
-.kiri{
-    color: #0026ff;
-    font-weight: bold;
-}
-
-.shichan{
-    color: #c32bff;
+    color: var(--nachiko-color);
     font-weight: bold;
 }
 
 .bibi{
-    color: #ff00bf;
+    color: var(--bibi-color);
     font-weight: bold;
     }
 
 
-.kotomi.nattan{
-    background: linear-gradient(to right, #ff0000 50%, #ff8800 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
+.nattan{
+    color: var(--nattan-color);
+    font-weight: bold;
 }
 
-.kotomi.nachiko{
-    background: linear-gradient(to right, #ff0000 50%, #00d170 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
+.kotomi{
+    color: var(--kotomi-color);
+    font-weight: bold;
 }
 
-.kotomi.rino{
-    background: linear-gradient(to right, #ff0000 50%, #00cfd6 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
+.shichan{
+    color: var(--shichan-color);
+    font-weight: bold;
 }
 
-.kotomi.kiri{
-    background: linear-gradient(to right, #ff0000 50%, #0026ff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
+.kiri{
+    color: var(--kiri-color);
+    font-weight: bold;
 }
 
-.kotomi.shichan{
-    background: linear-gradient(to right, #ff0000 50%, #c32bff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
 
-.kotomi.bibi{
-    background: linear-gradient(to right, #ff0000 50%, #ff00bf 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
+/* Reordered duo selectors to follow single-member class order
+   Order: rino, nachiko, bibi, nattan, kotomi, shichan, kiri */
 
-.nattan.nachiko{
-    background: linear-gradient(to right, #ff8800 50%, #00d170 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nattan.rino{
-    background: linear-gradient(to right, #ff8800 50%, #00cfd6 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nattan.kiri{
-    background: linear-gradient(to right, #ff8800 50%, #0026ff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nattan.shichan{
-    background: linear-gradient(to right, #ff8800 50%, #c32bff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nattan.bibi{
-    background: linear-gradient(to right, #ff8800 50%, #ff00bf 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nachiko.rino{
-    background: linear-gradient(to right, #00d170 50%, #00cfd6 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nachiko.kiri{
-    background: linear-gradient(to right, #00d170 50%, #0026ff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nachiko.shichan{
-    background: linear-gradient(to right, #00d170 50%, #c32bff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.nachiko.bibi{
-    background: linear-gradient(to right, #00d170 50%, #ff00bf 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.rino.kiri{
-    background: linear-gradient(to right, #00cfd6 50%, #0026ff 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; 
-}
-
-.rino.shichan{
-    background: linear-gradient(to right, #00cfd6 50%, #c32bff 50%);
+/* rino group */
+.rino.nachiko{
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--nachiko-color) 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
 }
 
 .rino.bibi{
-    background: linear-gradient(to right, #00cfd6 50%, #ff00bf 50%);
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--bibi-color) 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
 }
 
-.kiri.shichan{
-    background: linear-gradient(to right, #0026ff 50%, #c32bff 50%);
+.rino.nattan{
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--nattan-color) 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
 }
 
-.kiri.bibi{
-    background: linear-gradient(to right, #0026ff 50%, #ff00bf 50%);
+.rino.kotomi{
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--kotomi-color) 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
 }
 
-.shichan.bibi{
-    background: linear-gradient(to right, #c32bff 50%, #ff00bf 50%);
+.rino.shichan{
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--shichan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.rino.kiri{
+    background: linear-gradient(to right, var(--rino-color) 50%, var(--kiri-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/* nachiko group */
+.nachiko.bibi{
+    background: linear-gradient(to right, var(--nachiko-color) 50%, var(--bibi-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nachiko.nattan{
+    background: linear-gradient(to right, var(--nachiko-color) 50%, var(--nattan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nachiko.kotomi{
+    background: linear-gradient(to right, var(--nachiko-color) 50%, var(--kotomi-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nachiko.shichan{
+    background: linear-gradient(to right, var(--nachiko-color) 50%, var(--shichan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nachiko.kiri{
+    background: linear-gradient(to right, var(--nachiko-color) 50%, var(--kiri-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/* bibi group */
+.bibi.nattan{
+    background: linear-gradient(to right, var(--bibi-color) 50%, var(--nattan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.bibi.kotomi{
+    background: linear-gradient(to right, var(--bibi-color) 50%, var(--kotomi-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.bibi.shichan{
+    background: linear-gradient(to right, var(--bibi-color) 50%, var(--shichan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.bibi.kiri{
+    background: linear-gradient(to right, var(--bibi-color) 50%, var(--kiri-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/* nattan group */
+.nattan.kotomi{
+    background: linear-gradient(to right, var(--nattan-color) 50%, var(--kotomi-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nattan.shichan{
+    background: linear-gradient(to right, var(--nattan-color) 50%, var(--shichan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nattan.kiri{
+    background: linear-gradient(to right, var(--nattan-color) 50%, var(--kiri-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/* kotomi group */
+.kotomi.shichan{
+    background: linear-gradient(to right, var(--kotomi-color) 50%, var(--shichan-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.kotomi.kiri{
+    background: linear-gradient(to right, var(--kotomi-color) 50%, var(--kiri-color) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/* shichan group */
+.shichan.kiri{
+    background: linear-gradient(to right, var(--shichan-color) 50%, var(--kiri-color) 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
